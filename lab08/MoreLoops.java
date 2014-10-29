@@ -22,14 +22,19 @@ public class MoreLoops {
         //}
         
         do{
+            if(scan.hasNextInt()){
+                break;
+            }
+            else{
             scan.next();
             System.out.print("You did not enter an int; try again- ");
+            }
         }while(!scan.hasNextInt()); 
         
         
         //COMMENT OUT THE ABOVE 5 LINES AND REPLACE THE CODE WITH A 
         //DO-WHILE LOOP
-      //  n = scan.nextInt();
+       n = scan.nextInt();
 
         //for (int j = 0; j < n && j < 40; j++) {
         //    for (int k = 0; k < j + 1; k++) {
@@ -39,10 +44,10 @@ public class MoreLoops {
         //}
         
         int j=0;
-        int k=0;
+        int k;
         
         while(j < n && j < 40 ){
-            
+          k=0;  
             while(k < j + 1){
                 System.out.print('*');
                 k++;
@@ -53,24 +58,11 @@ public class MoreLoops {
         }
         
         
-    int j=0;
-        int k=0;
-        
-        while(j < n && j < 40 ){
-            j++;
-            while(k < j){
-                System.out.print('*');
-                k++;
-            }
-            k=0;
-            System.out.println();
-        }
-        
         
         //COMMENT OUT THE ABOVE SIX LINES OF CODE AND REPLACE WITH 
         //WHILE STATEMENTS 
 
-        int k = 4;
+         k = 4;
 
         //do {
         //    System.out.println("k=" + k);
@@ -113,8 +105,8 @@ public class MoreLoops {
         //        break;
         //}
         int count = 0;
-        for(count=0; count < 11; count++) {
-            for(n = 0; n<6; n++){
+        for(count=0; count < 11; count--) {
+            //for(n = 0; n<6; n++){
                 if (n<1 || n>5){
                     System.out.println(n + " is > 5 or <1");
                     break;
@@ -135,8 +127,10 @@ public class MoreLoops {
                     System.out.println("Case 5");
                     break;
                 }
+                if(count>10){
                 break;
-            }
+                }
+            //}
         }
         
         
