@@ -20,7 +20,7 @@ public class NumberStack {
             //Declare instance of scanner to accpet user input
             Scanner input;
             //Call Scanner Constructor
-            input = new Scanner(System.in);
+            input = new scanner(System.in);
 
             System.out.print("Enter an integer between 1 and 9: ");
 
